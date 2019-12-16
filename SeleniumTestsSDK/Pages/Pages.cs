@@ -1,8 +1,8 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-
-namespace SeleniumTestsSDK.Pages
+﻿namespace SeleniumTestsSDK.Pages
 {
+    using System.Collections.Generic;
+    using System.Linq;
+
     public class Pages : IPages
     {
         private readonly List<BasePage> pages;

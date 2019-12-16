@@ -1,10 +1,10 @@
-﻿using System.Collections.Generic;
-using OpenQA.Selenium;
-using SeleniumTestsSDK.Engines;
-using SeleniumTestsSDK.Helpers;
-
-namespace SeleniumTestsSDK.Pages
+﻿namespace SeleniumTestsSDK.Pages
 {
+    using System.Collections.Generic;
+    using Engines;
+    using Helpers;
+    using OpenQA.Selenium;
+
     internal class GoogleHomePage : BasePage
     {
         private readonly ISearchEngine engine;
@@ -23,5 +23,7 @@ namespace SeleniumTestsSDK.Pages
         public bool Displayed => this.IsDisplayed(this, this.SearchBox);
 
         public IWebElement SearchBox => this.engine.Find(By.XPath("//input[@name='q']"));
+
+        public IWebElement SubmitButton => this.engine.Find(By.XPath("//input[@type='submit']"));
     }
 }

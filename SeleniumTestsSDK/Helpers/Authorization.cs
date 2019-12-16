@@ -1,10 +1,10 @@
-﻿using System;
-using OpenQA.Selenium;
-using SeleniumTestsSDK.Settings;
-using SeleniumTestsSDK.Utils;
-
-namespace SeleniumTestsSDK.Helpers
+﻿namespace SeleniumTestsSDK.Helpers
 {
+    using System;
+    using OpenQA.Selenium;
+    using Settings;
+    using Utils;
+
     public class Authorization
     {
         public static void Login(IWebDriver driver, ILoginPage loginPage, IUser user)

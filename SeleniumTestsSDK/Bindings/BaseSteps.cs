@@ -1,11 +1,11 @@
-﻿using System;
-using OpenQA.Selenium;
-using SeleniumTestsSDK.Settings;
-using SeleniumTestsSDK.Utils;
-using TechTalk.SpecFlow;
-
-namespace SeleniumTestsSDK.Bindings
+﻿namespace SeleniumTestsSDK.Bindings
 {
+    using System;
+    using OpenQA.Selenium;
+    using Settings;
+    using TechTalk.SpecFlow;
+    using Utils;
+
     [Binding]
     public class BaseSteps : Steps
     {
@@ -54,18 +54,15 @@ namespace SeleniumTestsSDK.Bindings
             {
                 this.driver?.Quit();
                 this.driver?.Dispose();
-                Methods.KillChromeDriver();
             }
             catch (Exception e)
             {
                 Console.WriteLine(e);
             }
-        }
-
-        [AfterFeature]
-        private static void DisposePhones()
-        {
-            
+            finally
+            {
+                Methods.KillChromeDriver();
+            }
         }
     }
 }

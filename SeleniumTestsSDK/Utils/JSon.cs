@@ -1,8 +1,8 @@
-﻿using System;
-using Newtonsoft.Json;
-
-namespace SeleniumTestsSDK.Utils
+﻿namespace SeleniumTestsSDK.Utils
 {
+    using System;
+    using Newtonsoft.Json;
+
     public class Json
     {
         public static T Deserialize<T>(string value)

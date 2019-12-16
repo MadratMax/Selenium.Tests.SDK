@@ -1,9 +1,9 @@
-﻿using System.IO;
-using OpenQA.Selenium;
-using SeleniumTestsSDK.Settings;
-
-namespace SeleniumTestsSDK.Utils
+﻿namespace SeleniumTestsSDK.Utils
 {
+    using System.IO;
+    using OpenQA.Selenium;
+    using Settings;
+
     public class ScreenCapture
     {
         private readonly string screenShotPath;

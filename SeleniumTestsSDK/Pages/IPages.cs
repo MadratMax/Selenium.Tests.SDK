@@ -1,7 +1,7 @@
-﻿using System.Collections.Generic;
-
-namespace SeleniumTestsSDK.Pages
+﻿namespace SeleniumTestsSDK.Pages
 {
+    using System.Collections.Generic;
+
     public interface IPages
     {
         List<BasePage> GetPages();

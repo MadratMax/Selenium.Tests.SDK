@@ -1,7 +1,7 @@
-﻿using OpenQA.Selenium;
-
-namespace SeleniumTestsSDK.Pages
+﻿namespace SeleniumTestsSDK.Pages
 {
+    using OpenQA.Selenium;
+
     internal interface IBasePage
     {
         string Url { get; set; }

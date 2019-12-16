@@ -1,9 +1,9 @@
-﻿using OpenQA.Selenium;
-using SeleniumTestsSDK.Pages;
-using SeleniumTestsSDK.Utils;
-
-namespace SeleniumTestsSDK.Helpers
+﻿namespace SeleniumTestsSDK.Helpers
 {
+    using OpenQA.Selenium;
+    using Pages;
+    using Utils;
+
     internal static class WebPageConsumer
     {
         private static BasePage currentPage;

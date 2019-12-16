@@ -1,12 +1,11 @@
-﻿using OpenQA.Selenium;
-using SeleniumTestsSDK.Engines;
-using SeleniumTestsSDK.Helpers;
-using SeleniumTestsSDK.Pages;
-using SeleniumTestsSDK.Utils;
-using TechTalk.SpecFlow;
-
-namespace SeleniumTestsSDK.Bindings.Hooks
+﻿namespace SeleniumTestsSDK.Bindings.Hooks
 {
+    using Engines;
+    using OpenQA.Selenium;
+    using Pages;
+    using TechTalk.SpecFlow;
+    using Utils;
+
     [Binding]
     internal class BrowserHookSteps : BaseSteps
     {

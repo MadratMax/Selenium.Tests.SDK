@@ -1,8 +1,8 @@
-﻿using System;
-using Microsoft.Extensions.Configuration;
-
-namespace SeleniumTestsSDK.Settings
+﻿namespace SeleniumTestsSDK.Settings
 {
+    using System;
+    using Microsoft.Extensions.Configuration;
+
     internal class SettingsManager
     {
         private static string currentBrowser;

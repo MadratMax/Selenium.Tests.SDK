@@ -1,8 +1,8 @@
-﻿using System.Text.RegularExpressions;
-using SeleniumTestsSDK.Settings;
-
-namespace SeleniumTestsSDK.Utils
+﻿namespace SeleniumTestsSDK.Utils
 {
+    using System.Text.RegularExpressions;
+    using Settings;
+
     public sealed class FormattedString
     {
         private const string Opentag = "<";

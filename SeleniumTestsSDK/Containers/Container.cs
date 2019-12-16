@@ -1,16 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection;
-using BoDi;
-using OpenQA.Selenium;
-using SeleniumTestsSDK.Engines;
-using SeleniumTestsSDK.Helpers;
-using SeleniumTestsSDK.Pages;
-using TechTalk.SpecFlow;
-
-namespace SeleniumTestsSDK.Containers
+﻿namespace SeleniumTestsSDK.Containers
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Reflection;
+    using BoDi;
+    using Engines;
+    using Helpers;
+    using OpenQA.Selenium;
+    using Pages;
+    using TechTalk.SpecFlow;
+
     [Binding]
     internal class Container
     {
@@ -47,7 +47,7 @@ namespace SeleniumTestsSDK.Containers
                 this.pageInstances.Add(instance);
             }
 
-            var pages = new Pages.Pages(this.pageInstances);
+            var pages = new Pages(this.pageInstances);
             this.objectContainer.RegisterInstanceAs<IPages>(pages);
 
             WebPageConsumer.Pages = pages;

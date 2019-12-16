@@ -1,9 +1,9 @@
-﻿using System.Collections.Generic;
-using OpenQA.Selenium;
-using SeleniumTestsSDK.Pages;
-
-namespace SeleniumTestsSDK.Engines
+﻿namespace SeleniumTestsSDK.Engines
 {
+    using System.Collections.Generic;
+    using OpenQA.Selenium;
+    using Pages;
+
     public interface ISearchEngine
     {
         IWebElement Find(By by);

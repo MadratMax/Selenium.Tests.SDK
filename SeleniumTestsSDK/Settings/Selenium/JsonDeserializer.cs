@@ -1,10 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using Newtonsoft.Json.Linq;
-
-namespace SeleniumTestsSDK.Settings.Selenium
+﻿namespace SeleniumTestsSDK.Settings.Selenium
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using Newtonsoft.Json.Linq;
+
     public class JsonDeserializer
     {
         public static Dictionary<string, object> GetDictionaryFromJObject(JObject obj)

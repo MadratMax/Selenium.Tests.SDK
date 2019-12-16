@@ -1,14 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection;
-using OpenQA.Selenium;
-using SeleniumTestsSDK.Helpers;
-using SeleniumTestsSDK.Pages;
-using SeleniumTestsSDK.Utils;
-
-namespace SeleniumTestsSDK.Engines
+﻿namespace SeleniumTestsSDK.Engines
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Reflection;
+    using Helpers;
+    using OpenQA.Selenium;
+    using Pages;
+    using Utils;
+
     internal class WebSearchEngine : ISearchEngine
     {
         private readonly IWebDriver driver;

@@ -1,12 +1,12 @@
-﻿using System;
-using System.Linq;
-using OpenQA.Selenium;
-using OpenQA.Selenium.Support.UI;
-using SeleniumTestsSDK.Containers;
-using SeleniumTestsSDK.Helpers;
-
-namespace SeleniumTestsSDK.Utils
+﻿namespace SeleniumTestsSDK.Utils
 {
+    using System;
+    using System.Linq;
+    using Containers;
+    using Helpers;
+    using OpenQA.Selenium;
+    using OpenQA.Selenium.Support.UI;
+
     public static class DriverExtensions
     {
         public static void GoTo(this IWebDriver driver, string url)

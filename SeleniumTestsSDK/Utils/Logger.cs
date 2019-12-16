@@ -1,7 +1,7 @@
-﻿using System;
-
-namespace SeleniumTestsSDK.Utils
+﻿namespace SeleniumTestsSDK.Utils
 {
+    using System;
+
     internal class Logger
     {
         public static void Write(string message)

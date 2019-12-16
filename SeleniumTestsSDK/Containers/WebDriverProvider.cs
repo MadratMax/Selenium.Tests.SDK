@@ -1,13 +1,13 @@
-﻿using System;
-using OpenQA.Selenium;
-using OpenQA.Selenium.Chrome;
-using OpenQA.Selenium.Remote;
-using SeleniumTestsSDK.Settings;
-using SeleniumTestsSDK.Settings.Selenium;
-using SeleniumTestsSDK.Utils;
-
-namespace SeleniumTestsSDK.Containers
+﻿namespace SeleniumTestsSDK.Containers
 {
+    using System;
+    using OpenQA.Selenium;
+    using OpenQA.Selenium.Chrome;
+    using OpenQA.Selenium.Remote;
+    using Settings;
+    using Settings.Selenium;
+    using Utils;
+
     public class WebDriverProvider
     {
         private static readonly SeleniumSettings settings;

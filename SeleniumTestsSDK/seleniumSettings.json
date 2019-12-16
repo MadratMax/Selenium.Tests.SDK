@@ -1,7 +1,6 @@
 ﻿{
   "BrowserSessionSettings": {
-    "Mode": "local"
-    //"Mode":  "remote" 
+    "Mode": "local" 
   },
 
   "LocalBrowserSettings": {

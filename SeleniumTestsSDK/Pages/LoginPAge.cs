@@ -1,10 +1,10 @@
-﻿using OpenQA.Selenium;
-using SeleniumTestsSDK.Engines;
-using SeleniumTestsSDK.Helpers;
-using SeleniumTestsSDK.Settings;
-
-namespace SeleniumTestsSDK.Pages
+﻿namespace SeleniumTestsSDK.Pages
 {
+    using Engines;
+    using Helpers;
+    using OpenQA.Selenium;
+    using Settings;
+
     internal class LoginPage : BasePage, ILoginPage
     {
         private readonly ISearchEngine engine;

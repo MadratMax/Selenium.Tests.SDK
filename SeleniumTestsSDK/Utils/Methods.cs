@@ -1,11 +1,11 @@
-﻿using System;
-using System.Diagnostics;
-using System.Text.RegularExpressions;
-using System.Threading;
-using Polly;
-
-namespace SeleniumTestsSDK.Utils
+﻿namespace SeleniumTestsSDK.Utils
 {
+    using System;
+    using System.Diagnostics;
+    using System.Text.RegularExpressions;
+    using System.Threading;
+    using Polly;
+
     public static class Methods
     {
         public static bool WaitUntil(Func<bool> action, int maxWait = 15)

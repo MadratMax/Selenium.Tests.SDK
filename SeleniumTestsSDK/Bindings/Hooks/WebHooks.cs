@@ -1,15 +1,14 @@
-﻿using System.Linq;
-using NUnit.Framework;
-using OpenQA.Selenium;
-using SeleniumTestsSDK.Engines;
-using SeleniumTestsSDK.Helpers;
-using SeleniumTestsSDK.Pages;
-using SeleniumTestsSDK.Settings;
-using SeleniumTestsSDK.Utils;
-using TechTalk.SpecFlow;
-
-namespace SeleniumTestsSDK.Bindings.Hooks
+﻿namespace SeleniumTestsSDK.Bindings.Hooks
 {
+    using System.Linq;
+    using Engines;
+    using Helpers;
+    using NUnit.Framework;
+    using OpenQA.Selenium;
+    using Pages;
+    using TechTalk.SpecFlow;
+    using Utils;
+
     [Binding]
     internal class WebHookSteps : BaseSteps
     {
@@ -61,7 +60,7 @@ namespace SeleniumTestsSDK.Bindings.Hooks
         [When(@"user opens page '(.*)'")]
         public void UserOpensPage(string pageName)
         {
-            var desiredPage = this.pages.GetPages().FirstOrDefault(p => p.GetType().Name == pageName.ToLower());
+            var desiredPage = this.pages.GetPages().FirstOrDefault(p => p.GetType().Name == pageName);
 
             Assert.IsNotNull(desiredPage, $"{pageName} was not found in page objects set");
 
@@ -80,7 +79,7 @@ namespace SeleniumTestsSDK.Bindings.Hooks
         [Then(@"page '(.*)' is displayed")]
         public void PageIsDisplayed(string pageName)
         {
-            var desiredPage = this.pages.GetPages().FirstOrDefault(p => p.GetType().Name == pageName.ToLower());
+            var desiredPage = this.pages.GetPages().FirstOrDefault(p => p.GetType().Name == pageName);
 
             Assert.IsNotNull(desiredPage, $"{pageName} was not found in page objects set");
 

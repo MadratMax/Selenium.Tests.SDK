@@ -1,8 +1,8 @@
-﻿using OpenQA.Selenium;
-using SeleniumTestsSDK.Helpers;
-
-namespace SeleniumTestsSDK.Pages
+﻿namespace SeleniumTestsSDK.Pages
 {
+    using Helpers;
+    using OpenQA.Selenium;
+
     public abstract class BasePage : IBasePage
     {
         public virtual string Url { get; set; }
