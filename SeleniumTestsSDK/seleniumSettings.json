@@ -1,0 +1,54 @@
+﻿{
+  "BrowserSessionSettings": {
+    "Mode": "local"
+    //"Mode":  "remote" 
+  },
+
+  "LocalBrowserSettings": {
+    "Browser": "chrome"
+  },
+
+  "RemoteBrowserSettings": {
+    "ChromeCapabilities": "ChromeCapabilities",
+    "FirefoxCapabilities": "FirefoxCapabilities",
+    "OperaCapabilities": "OperaCapabilities",
+    "EdgeCapabilities": "EdgeCapabilities",
+    "Endpoint": "SELENOID HUB ENDPOINT"
+  },
+
+  "ChromeCapabilities": {
+    "browserName": "chrome",
+    "version": "74.0",
+    "platform": "any",
+    "enableVNC": true,
+    "goog:chromeOptions": {
+      "args": [ "window-size=1920,1080", "window-position=0,0" ]
+    }
+  },
+
+  "FirefoxCapabilities": {
+    "browserName": "firefox",
+    "version": "67.0",
+    "platform": "any",
+    "enableVNC": true,
+    "moz:firefoxOptions": {
+      "args": [ "-width", "1920", "-height", "1080" ]
+    }
+  },
+
+  "OperaCapabilities": {
+    "browserName": "operablink",
+    "version": "60.0",
+    "platform": "any",
+    "enableVNC": true,
+    "operaOptions": {
+      "args": [ "window-size=1920,1080", "window-position=0,0" ],
+      "binary": "/usr/bin/opera"
+    }
+  },
+
+  "EdgeCapabilities": {
+    "browserName": "MicrosoftEdge",
+    "platform": "windows"
+  }
+}
