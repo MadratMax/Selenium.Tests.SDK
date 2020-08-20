@@ -24,6 +24,8 @@
 
         public IWebElement SearchBox => this.engine.Find(By.XPath("//input[@name='q']"));
 
-        public IWebElement SubmitButton => this.engine.Find(By.XPath("//input[@type='submit']"));
+        public IWebElement SearchButton => this.engine.Find(By.XPath("//input[@type='submit']"));
+
+        public IWebElement WikipediaLink => this.engine.Find(By.XPath("//a[@href='https://ru.wikipedia.org/wiki/Nginx']"));
     }
 }

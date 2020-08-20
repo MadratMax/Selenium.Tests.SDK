@@ -81,7 +81,9 @@ this.ScenarioSetup(scenarioInfo);
 #line 9
  testRunner.And("element \'SearchBox\' text is \'nginx\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 10
- testRunner.And("user clicks on \'SubmitButton\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("user clicks on \'SearchButton\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 11
+ testRunner.And("element \'WikipediaLink\' is displayed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             this.ScenarioCleanup();
         }

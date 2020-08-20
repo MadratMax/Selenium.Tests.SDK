@@ -7,4 +7,5 @@ Scenario: Login to
 	When user clicks on 'SearchBox'
 	And user enters the text 'nginx'
 	And element 'SearchBox' text is 'nginx'
-	And user clicks on 'SubmitButton'
+	And user clicks on 'SearchButton'
+	And element 'WikipediaLink' is displayed
