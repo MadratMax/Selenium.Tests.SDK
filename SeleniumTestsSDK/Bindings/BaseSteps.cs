@@ -42,7 +42,7 @@
 
             if (error != null)
             {
-                string screenShotPath = SettingsManager.GetSettingsValue("tests", "screenShot", "path");
+                string screenShotPath = SettingsManager.GetSettingsValue("tests", "screenshot", "path");
                 string testName = ScenarioContext.Current.ScenarioInfo.Title.TruncateAndNormalize(70);
                 string stepName = this.CurrentStepName.TruncateAndNormalize(50);
                 string testError = Methods.RemoveRestrictedChars(ScenarioContext.Current.TestError.Message).TruncateAndNormalize(60);
