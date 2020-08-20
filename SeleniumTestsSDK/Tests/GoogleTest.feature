@@ -2,7 +2,7 @@
 	As a User I want to be able to use Google search
 
 @smoke
-Scenario: Login to
+Scenario: Wiki link for nginx
 	Given user opens page 'GoogleHomePage'
 	When user clicks on 'SearchBox'
 	And user enters the text 'nginx'

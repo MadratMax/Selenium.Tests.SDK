@@ -64,11 +64,11 @@ namespace SeleniumTestsSDK.Tests
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Login to")]
+        [NUnit.Framework.DescriptionAttribute("Wiki link for nginx")]
         [NUnit.Framework.CategoryAttribute("smoke")]
-        public virtual void LoginTo()
+        public virtual void WikiLinkForNginx()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Login to", new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Wiki link for nginx", new string[] {
                         "smoke"});
 #line 5
 this.ScenarioSetup(scenarioInfo);
