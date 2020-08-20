@@ -17,8 +17,6 @@
 
         public void TakeScreenshot(string scenario, string stepName, string testError)
         {
-            var browserName = SettingsManager.GetSettingsValue("tests", "browser").ToLower();
-
             if (!Directory.Exists(this.screenShotPath))
             {
                 Directory.CreateDirectory(this.screenShotPath);
