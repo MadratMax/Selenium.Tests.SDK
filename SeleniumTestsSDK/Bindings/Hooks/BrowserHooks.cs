@@ -50,23 +50,29 @@
             this.driver.SwitchToLastWindow();
         }
 
-        [When(@"user refresh page")]
+        [When(@"user refreshes page")]
         public void RefreshPage()
         {
             this.RefreshPageInSeconds();
         }
 
-        [When(@"user refresh page in (.*) seconds")]
+        [When(@"user refreshes page in (.*) seconds")]
         public void RefreshPageInSeconds(int seconds = 0)
         {
             Methods.WaitForSeconds(seconds);
             this.driver.Navigate().Refresh();
         }
 
-        [When(@"user wait (.*) seconds")]
+        [When(@"user waits (.*) seconds")]
         public void WaitSeconds(int seconds)
         {
             Methods.WaitForSeconds(seconds);
+        }
+
+        [When(@"user switches to frame")]
+        public void SwitchToFrame()
+        {
+            this.driver.SwitchToFrame();
         }
     }
 }

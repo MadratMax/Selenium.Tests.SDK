@@ -14,6 +14,8 @@
 
         IWebElement FindElementByName(BasePage page, string elementName);
 
+        IEnumerable<IWebElement> FindElementsByName(BasePage page, string elementName);
+
         string FindPageUrl(BasePage page);
 
         bool PageIsDisplayed(BasePage page);

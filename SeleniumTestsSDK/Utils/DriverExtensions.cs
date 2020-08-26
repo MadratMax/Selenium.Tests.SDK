@@ -35,6 +35,19 @@
             WebPageConsumer.InFrame = false;
         }
 
+        public static void SwitchToFrame(this IWebDriver driver, int frameIndex = 0)
+        {
+            try
+            {
+                driver.SwitchTo().Frame(frameIndex);
+            }
+            catch
+            {
+                driver.WaitForSeconds(2);
+                driver.SwitchTo().Frame(frameIndex);
+            }
+        }
+
         public static void SwitchToTab(this IWebDriver driver, int tabIndex)
         {
             driver.WaitForSeconds(1);

@@ -97,6 +97,14 @@
             return element;
         }
 
+        public IEnumerable<IWebElement> FindElementsByName(BasePage page, string elementName)
+        {
+            Type t = page.GetType();
+            PropertyInfo prop = t.GetProperty(elementName);
+            IEnumerable<IWebElement> elements = (IEnumerable<IWebElement>)prop?.GetValue(page);
+            return elements;
+        }
+
         public string FindPageUrl(BasePage page)
         {
             Type t = page.GetType();

@@ -212,7 +212,7 @@
 
             Assert.IsTrue(
                 actualElementText.Contains(expectedText),
-                $"Expected: comment text should contain text '{expectedText}'\n Actual text: '{actualElementText}'");
+                $"Expected: {elementName} should contain text '{expectedText}'\n Actual text: '{actualElementText}'");
         }
 
         [When(@"element '(.*)' text is not '(.*)'")]
