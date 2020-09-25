@@ -1,5 +1,6 @@
 # Selenium.Tests.SDK
 SDK for creating selenium tests using Gherkin notation.
+This framework can be used as a base platform that easily to extend and provides creating auto tests without implementing extra coding of initial logic.
 
 Includes the SpecFlow framework configured with example.
 
