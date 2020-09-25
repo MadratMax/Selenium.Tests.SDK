@@ -1,5 +1,5 @@
 # Selenium.Tests.SDK
-SDK for creating selenium tests using SpecFlow BDD notation.
+SDK for creating selenium tests using Gherkin notation.
 
 Includes the SpecFlow framework configured with example.
 
