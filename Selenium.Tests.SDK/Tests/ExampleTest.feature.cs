@@ -24,7 +24,7 @@ namespace Selenium.Tests.SDK.Tests
         
         private TechTalk.SpecFlow.ITestRunner testRunner;
         
-#line 1 "GoogleTest.feature"
+#line 1 "ExampleTest.feature"
 #line hidden
         
         [NUnit.Framework.OneTimeSetUpAttribute()]
@@ -72,17 +72,17 @@ namespace Selenium.Tests.SDK.Tests
                         "smoke"});
 #line 5
 this.ScenarioSetup(scenarioInfo);
-#line 6
- testRunner.Given("user opens page \'GoogleHomePage\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 7
- testRunner.When("user clicks on \'SearchBox\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 8
- testRunner.And("user enters the text \'nginx\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.Given("user opens page \'GoogleHomePage\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 9
- testRunner.And("element \'SearchBox\' text is \'nginx\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 10
- testRunner.And("user clicks on \'SearchButton\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.When("user clicks on \'SearchBox\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 11
+ testRunner.And("user enters the text \'nginx\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 13
+ testRunner.And("element \'SearchBox\' text is \'nginx\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 15
+ testRunner.And("user clicks on \'SearchButton\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 17
  testRunner.And("element \'NginxLink\' is displayed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             this.ScenarioCleanup();

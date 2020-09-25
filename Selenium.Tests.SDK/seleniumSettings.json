@@ -17,7 +17,7 @@
 
   "ChromeCapabilities": {
     "browserName": "chrome",
-    "version": "74.0",
+    "version": "76.0",
     "platform": "any",
     "enableVNC": true,
     "goog:chromeOptions": {

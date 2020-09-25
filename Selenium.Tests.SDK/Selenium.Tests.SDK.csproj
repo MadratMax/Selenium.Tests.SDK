@@ -59,4 +59,7 @@
   </ItemGroup>
   <ItemGroup />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild" />
+  <ItemGroup>
+    <SpecFlowFeatureFiles Remove="Tests\ExampleTest.feature" />
+  </ItemGroup>
 </Project>
