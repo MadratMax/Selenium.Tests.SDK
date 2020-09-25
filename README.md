@@ -29,4 +29,5 @@ Remote run:
 - Change BrowserSessionSettings -> "Mode": "remote" .
 
 Selenoid should be configured and be able to support the specified browser capabilities.
-
+Firefox, Opera and IE are also able to be used during the remote run (should be configured properly on the remote server). 
+Refer to seleniumSettings.json to find out the preconfigured settings for all supported browsers.
