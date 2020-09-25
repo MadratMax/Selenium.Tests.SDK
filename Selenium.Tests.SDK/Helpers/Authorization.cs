@@ -6,6 +6,10 @@
     using Settings;
     using Utils;
 
+    /// <summary>
+    /// Provides a mechanism to authorize within a login form.
+    /// Login window requirements: username input and password input should be visible the same time.
+    /// </summary>
     public class Authorization
     {
         public static void Login(IWebDriver driver, ILoginPage loginPage, IUser user)
