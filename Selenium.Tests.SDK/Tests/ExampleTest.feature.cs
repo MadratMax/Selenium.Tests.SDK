@@ -64,11 +64,11 @@ namespace Selenium.Tests.SDK.Tests
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Search found a link for nginx")]
+        [NUnit.Framework.DescriptionAttribute("Found link for nginx")]
         [NUnit.Framework.CategoryAttribute("smoke")]
-        public virtual void SearchFoundALinkForNginx()
+        public virtual void FoundLinkForNginx()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Search found a link for nginx", new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Found link for nginx", new string[] {
                         "smoke"});
 #line 5
 this.ScenarioSetup(scenarioInfo);
