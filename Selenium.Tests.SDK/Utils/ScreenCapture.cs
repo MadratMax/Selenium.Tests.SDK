@@ -2,7 +2,6 @@
 {
     using System.IO;
     using OpenQA.Selenium;
-    using Settings;
 
     public class ScreenCapture
     {

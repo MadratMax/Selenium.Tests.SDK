@@ -1,6 +1,5 @@
 ﻿namespace Selenium.Tests.SDK.Pages
 {
-    using System.Collections.Generic;
     using Engines;
     using Helpers;
     using OpenQA.Selenium;
