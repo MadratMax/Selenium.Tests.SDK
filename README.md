@@ -1,5 +1,5 @@
 # Selenium.Tests.SDK
-SDK for creation selenium tests.
+SDK for creating selenium tests using SpecFlow BDD notation.
 
 Includes the SpecFlow framework configured with example.
 
@@ -11,10 +11,10 @@ Requirements:
 - Chromedriver.exe is executable binary, hence it should be always copied into debug folder.
 
 Dependencies:
-NUnit 3.10
-NUnit Adapter 3.13
-SpecFlow 2.3
-Polly 7.1.0
+- NUnit 3.10
+- NUnit Adapter 3.13
+- SpecFlow 2.3
+- Polly 7.1.0
 
 Using:
 Find the SpecFlow Example test (/Tests/ExampleTest.feature).
